@@ -1,11 +1,14 @@
 ---
 name: d3
-description: Build deterministic, verifiable data visualizations with D3.js (v6). Generate standalone HTML/SVG (and optional PNG) from local data files without external network dependencies. Use when tasks require charts, plots, axes/scales, legends, tooltips, or data-driven SVG output.
+description: Build deterministic, verifiable data visualizations with D3.js.
+tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
 # D3.js Visualization Skill
 
 Use this skill to turn structured data (CSV/TSV/JSON) into **clean, reproducible** visualizations using **D3.js**. The goal is to produce **stable outputs** that can be verified by diffing files or hashing.
+
+Generate standalone HTML/SVG (and optional PNG) from local data files. Use when tasks require charts, plots, axes/scales, legends, tooltips, or data-driven SVG output.
 
 ## When to use
 
@@ -33,7 +36,7 @@ If the user only needs a quick table or summary, **don’t** use D3—use a spre
   - color rules (categorical / sequential)
   - any labeling requirements (title, axis labels, units)
 - Output constraints:
-  - “static only”, “no animation”, “must be deterministic”, “offline”
+  - "static only", "no animation", "must be deterministic"
 
 If details are missing, **make reasonable defaults** and document them in comments near the top of the output file.
 
