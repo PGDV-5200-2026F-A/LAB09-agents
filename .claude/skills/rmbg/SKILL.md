@@ -180,16 +180,3 @@ Do not simplify it to a bare `uvx rembg` - it will fail. The reasons:
 
 `uv` / `uvx` on PATH is the only prerequisite - it fetches rembg and its dependencies on demand into
 uv's cache. No global pip install, no API key.
-
-## Optional: a reusable wrapper
-
-If you expect to do this often, it is convenient (not required) to save a small wrapper that fills in
-default output names and folder handling. This repo ships one at `scripts/remove-bg.sh` for anyone who
-clones it; a single-file skill install does not include it, so the inline command above is the
-canonical path.
-
-## When NOT to use this
-
-If the user specifically needs remove.bg's own cloud model output (e.g. to match it exactly on a paid
-plan), that is the remove.bg HTTP API (`api.remove.bg`, needs a key) - a different path. This skill is
-the local, key-free route that covers the vast majority of "remove the background" requests.

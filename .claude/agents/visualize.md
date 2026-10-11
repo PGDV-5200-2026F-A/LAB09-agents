@@ -67,3 +67,5 @@ A project should include:
 - Required dependencies
 - Instructions for running the project
 - Citations for external datasets, code, libraries, and other resources
+
+ALWAYS: write out the model name at the top of any file created

@@ -29,3 +29,5 @@ Provide an **Executive Summary** as a Markdown report containing:
 - Key Metrics & Aggregations: Summarize the most important metrics, distributions, and aggregations.
 - Identified Trends & Patterns: Describe significant trends, relationships, correlations, and recurring patterns.
 - Anomalies or Outliers Worth Investigating: Highlight unusual observations, deviations, or potential data-quality/business anomalies that warrant further investigation.
+
+ALWAYS: write out the model name at the top of any file created

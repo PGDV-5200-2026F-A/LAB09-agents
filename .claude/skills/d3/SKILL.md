@@ -19,9 +19,9 @@ Activate this skill when the user asks for any of the following:
 - timelines, small multiples, faceting
 - axis ticks, scales, legends, tooltips
 - data-driven SVG output for a report or web page
-- converting data to a static SVG or HTML visualization
+- converting data to a static or interactive SVG or HTML visualization
 
-If the user only needs a quick table or summary, **don’t** use D3—use a spreadsheet or plain markdown instead.
+If the user only needs a quick table or summary, or statistical data analysis, **don’t** use D3, use a spreadsheet or plain markdown instead.
 
 ---
 
@@ -36,9 +36,11 @@ If the user only needs a quick table or summary, **don’t** use D3—use a spre
   - color rules (categorical / sequential)
   - any labeling requirements (title, axis labels, units)
 - Output constraints:
-  - "static only", "no animation", "must be deterministic"
+  - "no animation", "must be deterministic"
 
-If details are missing, **make reasonable defaults** and document them in comments near the top of the output file.
+If details are missing, **make reasonable defaults** and document them in comments near the top of the output html file.
+
+Also include the name of the model in a comment at the beginning of the html file.
 
 ---
 
@@ -47,10 +49,21 @@ If details are missing, **make reasonable defaults** and document them in commen
 Prefer producing **all of** the following when feasible:
 
 1. `dist/chart.html` — standalone HTML that renders the visualization
-2. `dist/chart.svg` — exported SVG (stable and diff-friendly)
+   1. CSS and JavaScript files to support the HTML are create separately
+2. (Optional) `dist/chart.svg` — exported SVG (stable and diff-friendly)
 3. (Optional) `dist/chart.png` — if the task explicitly needs a raster image
 
 Always keep outputs in a predictable folder (default: `dist/`), unless the task specifies paths.
+
+---
+
+## Code Style
+
+JavaScript should be legible and easy to follow.
+
+Try to wrap graphs and plots into classes in order to reuse logic for axis, labels, placement, scalers, etc.
+
+Avoid "clever" JavaScript tricks that are hard to understand. Legibility, maintenance, and scalability are important.
 
 ---
 
@@ -91,7 +104,9 @@ If the task doesn't specify an existing structure, use:
 
 ```
 dist/
-  chart.html        # standalone HTML with inline or linked JS/CSS
+  chart.html        # standalone HTML
+  chart.css         # CSS style rules
+  chart.js          # JavaScript file
   chart.svg         # exported SVG (optional but nice)
   chart.png         # rasterized (optional)
 ```

@@ -21,3 +21,5 @@ Write python scripts and keep them in scripts/ if you need to process large data
 1. The fully imputed, clean dataset in the same format as the input.
 2. A short markdown summary of the Imputation Log.
 3. Please write these files to the file system.
+
+ALWAYS: write out the model name at the top of any file created
