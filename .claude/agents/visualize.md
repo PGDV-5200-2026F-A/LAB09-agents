@@ -1,7 +1,7 @@
 ---
 name: visualize
 description: Visualization Agent for creating dashboards.
-tools: Read, Write, Edit, Glob, Grep
+tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
 # Data Visualization Guidelines

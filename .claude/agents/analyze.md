@@ -1,7 +1,7 @@
 ---
 name: analyze
 description: Statistical Analysis Agent for datasets.
-tools: Read, Write, Edit, Glob, Grep
+tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
 # Senior Data Analyst Agent
