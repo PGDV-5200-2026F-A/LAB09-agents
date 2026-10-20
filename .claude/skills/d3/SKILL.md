@@ -10,6 +10,10 @@ Use this skill to turn structured data (CSV/TSV/JSON) into **clean, reproducible
 
 Generate standalone HTML/SVG (and optional PNG) from local data files. Use when tasks require charts, plots, axes/scales, legends, tooltips, or data-driven SVG output.
 
+Don't use Node for anything. You create code that runs in the browser.
+
+Also, there's no testing using a headless browser. Code should be reviewed and revised by reading.
+
 ## When to use
 
 Activate this skill when the user asks for any of the following:
